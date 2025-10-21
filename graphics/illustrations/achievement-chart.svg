@@ -1,0 +1,118 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="chartGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.6" />
+    </linearGradient>
+    <linearGradient id="chartGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:0.6" />
+    </linearGradient>
+    <linearGradient id="chartGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:0.6" />
+    </linearGradient>
+    <filter id="chartGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Chart Title -->
+  <text x="200" y="25" font-family="Arial, sans-serif" font-size="16" fill="#2c3e50" text-anchor="middle" font-weight="bold">
+    Professional Achievements
+  </text>
+  
+  <!-- Chart Background -->
+  <rect x="50" y="50" width="300" height="200" fill="none" stroke="#e0e0e0" stroke-width="1" rx="5"/>
+  
+  <!-- Grid Lines -->
+  <line x1="50" y1="100" x2="350" y2="100" stroke="#f0f0f0" stroke-width="1"/>
+  <line x1="50" y1="150" x2="350" y2="150" stroke="#f0f0f0" stroke-width="1"/>
+  <line x1="50" y1="200" x2="350" y2="200" stroke="#f0f0f0" stroke-width="1"/>
+  
+  <!-- Y-axis labels -->
+  <text x="45" y="55" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="end">100%</text>
+  <text x="45" y="105" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="end">75%</text>
+  <text x="45" y="155" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="end">50%</text>
+  <text x="45" y="205" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="end">25%</text>
+  <text x="45" y="255" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="end">0%</text>
+  
+  <!-- Animated Bars -->
+  <!-- Projects Completed -->
+  <rect x="80" y="250" width="40" height="0" fill="url(#chartGradient1)" filter="url(#chartGlow)" rx="3">
+    <animate attributeName="height" values="0;160;160" dur="2s" begin="0s" fill="freeze"/>
+    <animate attributeName="y" values="250;90;90" dur="2s" begin="0s" fill="freeze"/>
+  </rect>
+  <text x="100" y="270" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle" font-weight="bold">
+    Projects
+  </text>
+  <text x="100" y="80" font-family="Arial, sans-serif" font-size="12" fill="#667eea" text-anchor="middle" font-weight="bold">
+    15+
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2s" fill="freeze"/>
+  </text>
+  
+  <!-- Skills Mastered -->
+  <rect x="150" y="250" width="40" height="0" fill="url(#chartGradient2)" filter="url(#chartGlow)" rx="3">
+    <animate attributeName="height" values="0;180;180" dur="2s" begin="0.5s" fill="freeze"/>
+    <animate attributeName="y" values="250;70;70" dur="2s" begin="0.5s" fill="freeze"/>
+  </rect>
+  <text x="170" y="270" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle" font-weight="bold">
+    Skills
+  </text>
+  <text x="170" y="60" font-family="Arial, sans-serif" font-size="12" fill="#f093fb" text-anchor="middle" font-weight="bold">
+    20+
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.5s" fill="freeze"/>
+  </text>
+  
+  <!-- Experience Years -->
+  <rect x="220" y="250" width="40" height="0" fill="url(#chartGradient3)" filter="url(#chartGlow)" rx="3">
+    <animate attributeName="height" values="0;140;140" dur="2s" begin="1s" fill="freeze"/>
+    <animate attributeName="y" values="250;110;110" dur="2s" begin="1s" fill="freeze"/>
+  </rect>
+  <text x="240" y="270" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle" font-weight="bold">
+    Experience
+  </text>
+  <text x="240" y="100" font-family="Arial, sans-serif" font-size="12" fill="#4facfe" text-anchor="middle" font-weight="bold">
+    3+ Years
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3s" fill="freeze"/>
+  </text>
+  
+  <!-- Certifications -->
+  <rect x="290" y="250" width="40" height="0" fill="url(#chartGradient1)" filter="url(#chartGlow)" rx="3">
+    <animate attributeName="height" values="0;120;120" dur="2s" begin="1.5s" fill="freeze"/>
+    <animate attributeName="y" values="250;130;130" dur="2s" begin="1.5s" fill="freeze"/>
+  </rect>
+  <text x="310" y="270" font-family="Arial, sans-serif" font-size="10" fill="#2c3e50" text-anchor="middle" font-weight="bold">
+    Certs
+  </text>
+  <text x="310" y="120" font-family="Arial, sans-serif" font-size="12" fill="#667eea" text-anchor="middle" font-weight="bold">
+    5+
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.5s" fill="freeze"/>
+  </text>
+  
+  <!-- Achievement Stars -->
+  <g transform="translate(360, 60)">
+    <polygon points="0,-8 2.4,-2.4 8,0 2.4,2.4 0,8 -2.4,2.4 -8,0 -2.4,-2.4" fill="#FFD700" opacity="0">
+      <animate attributeName="opacity" values="0;1;0.8" dur="1s" begin="4s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="2s" begin="4s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+  
+  <g transform="translate(360, 100)">
+    <polygon points="0,-6 1.8,-1.8 6,0 1.8,1.8 0,6 -1.8,1.8 -6,0 -1.8,-1.8" fill="#FFD700" opacity="0">
+      <animate attributeName="opacity" values="0;1;0.8" dur="1s" begin="4.5s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="2.5s" begin="4.5s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+  
+  <g transform="translate(360, 140)">
+    <polygon points="0,-6 1.8,-1.8 6,0 1.8,1.8 0,6 -1.8,1.8 -6,0 -1.8,-1.8" fill="#FFD700" opacity="0">
+      <animate attributeName="opacity" values="0;1;0.8" dur="1s" begin="5s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="3s" begin="5s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+</svg>

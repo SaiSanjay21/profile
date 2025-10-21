@@ -1,0 +1,71 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.05" />
+    </linearGradient>
+    <linearGradient id="bgGradient2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:0.03" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Floating geometric shapes -->
+  <polygon points="100,50 150,100 100,150 50,100" fill="url(#bgGradient1)" opacity="0.6">
+    <animateTransform attributeName="transform" type="rotate" values="0 100 100;360 100 100" dur="20s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;50,30;0,0" dur="15s" repeatCount="indefinite" additive="sum"/>
+  </polygon>
+  
+  <circle cx="300" cy="200" r="40" fill="url(#bgGradient2)" opacity="0.4">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-30,50;0,0" dur="18s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="40;60;40" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  
+  <polygon points="500,100 550,130 530,180 470,180 450,130" fill="url(#bgGradient1)" opacity="0.5">
+    <animateTransform attributeName="transform" type="rotate" values="0 500 140;-360 500 140" dur="25s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;-40,-20;0,0" dur="16s" repeatCount="indefinite" additive="sum"/>
+  </polygon>
+  
+  <rect x="700" y="300" width="60" height="60" fill="url(#bgGradient2)" opacity="0.3" rx="10">
+    <animateTransform attributeName="transform" type="rotate" values="0 730 330;360 730 330" dur="22s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;20,-40;0,0" dur="14s" repeatCount="indefinite" additive="sum"/>
+  </rect>
+  
+  <polygon points="900,400 950,420 940,470 910,470 860,420" fill="url(#bgGradient1)" opacity="0.4">
+    <animateTransform attributeName="transform" type="rotate" values="0 905 445;360 905 445" dur="19s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;30,25;0,0" dur="17s" repeatCount="indefinite" additive="sum"/>
+  </polygon>
+  
+  <circle cx="200" cy="500" r="35" fill="url(#bgGradient2)" opacity="0.5">
+    <animateTransform attributeName="transform" type="translate" values="0,0;40,-30;0,0" dur="21s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="35;50;35" dur="13s" repeatCount="indefinite"/>
+  </circle>
+  
+  <polygon points="1000,200 1050,250 1000,300 950,250" fill="url(#bgGradient1)" opacity="0.3">
+    <animateTransform attributeName="transform" type="rotate" values="0 1000 250;-360 1000 250" dur="24s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;-25,35;0,0" dur="18s" repeatCount="indefinite" additive="sum"/>
+  </polygon>
+  
+  <rect x="400" y="600" width="50" height="50" fill="url(#bgGradient2)" opacity="0.4" rx="8">
+    <animateTransform attributeName="transform" type="rotate" values="0 425 625;360 425 625" dur="20s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;-35,15;0,0" dur="16s" repeatCount="indefinite" additive="sum"/>
+  </rect>
+  
+  <circle cx="800" cy="600" r="45" fill="url(#bgGradient1)" opacity="0.3">
+    <animateTransform attributeName="transform" type="translate" values="0,0;25,-45;0,0" dur="19s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="45;65;45" dur="15s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Connecting lines -->
+  <path d="M100 100 Q300 200 500 140" stroke="url(#bgGradient1)" stroke-width="1" fill="none" opacity="0.2">
+    <animate attributeName="stroke-dasharray" values="0,500;250,250;500,0;0,500" dur="8s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M730 330 Q900 445 1000 250" stroke="url(#bgGradient2)" stroke-width="1" fill="none" opacity="0.2">
+    <animate attributeName="stroke-dasharray" values="500,0;250,250;0,500;500,0" dur="10s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M200 500 Q400 625 800 600" stroke="url(#bgGradient1)" stroke-width="1" fill="none" opacity="0.2">
+    <animate attributeName="stroke-dasharray" values="0,600;300,300;600,0;0,600" dur="12s" repeatCount="indefinite"/>
+  </path>
+</svg>

@@ -1,0 +1,42 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <filter id="cloudGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main cloud shape -->
+  <path d="M20 45 C15 45, 12 40, 15 35 C12 30, 18 25, 25 28 C28 22, 38 22, 42 28 C48 25, 55 30, 52 35 C58 35, 62 40, 58 45 C62 50, 55 55, 50 52 C45 58, 35 58, 30 52 C25 55, 18 50, 20 45 Z" 
+        fill="url(#cloudGradient)" 
+        filter="url(#cloudGlow)" 
+        opacity="0.9"/>
+  
+  <!-- Server racks inside cloud -->
+  <rect x="30" y="35" width="4" height="12" fill="#ffffff" opacity="0.8" rx="1"/>
+  <rect x="36" y="37" width="4" height="10" fill="#ffffff" opacity="0.8" rx="1"/>
+  <rect x="42" y="33" width="4" height="14" fill="#ffffff" opacity="0.8" rx="1"/>
+  
+  <!-- Data flow lines -->
+  <path d="M25 42 Q35 38 45 42" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.6">
+    <animate attributeName="stroke-dasharray" values="0,20;20,0;0,20" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M25 48 Q35 52 45 48" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.6">
+    <animate attributeName="stroke-dasharray" values="20,0;0,20;20,0" dur="3s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Floating data particles -->
+  <circle cx="28" cy="40" r="1" fill="#ffffff" opacity="0.7">
+    <animateTransform attributeName="transform" type="translate" values="0,0;15,0;0,0" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="32" cy="50" r="1" fill="#ffffff" opacity="0.7">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-10,0;0,0" dur="3s" repeatCount="indefinite"/>
+  </circle>
+</svg>
