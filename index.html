@@ -8,7 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class="universal-background">
+    <!-- Smart Personalization Bar -->
+    <div class="personalization-bar">
+        <div id="weather-indicator" class="weather-indicator">
+            <div class="weather-info">
+                <span class="weather-icon">🌤️</span>
+                <span class="weather-temp">Loading...</span>
+            </div>
+        </div>
+        <div id="dynamic-greeting" class="dynamic-greeting">
+            <span class="greeting-emoji">👋</span>
+            <span class="greeting-text">Welcome!</span>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -353,6 +367,11 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Location-Based Project Recommendations -->
+            <div id="location-projects" class="location-projects">
+                <!-- Content will be dynamically populated by MCP integration -->
+            </div>
         </div>
     </section>
 
@@ -424,5 +443,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="mcp-integration.js"></script>
 </body>
 </html>
